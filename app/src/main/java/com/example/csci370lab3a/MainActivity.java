@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         StudentAdapter adapter = new StudentAdapter(this, students);
         studentList.setAdapter(adapter);
+        //
 
 
     }
