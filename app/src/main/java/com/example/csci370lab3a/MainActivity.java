@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Student student5 = new Student("Tucker","Bytnar", "Journalism");
         students.add(student5);
 
-        StudentAdapter adapter = new StudentAdapter(this, students);
+        StudentAdapter adapter = new StudentAdapter(getApplicationContext(), students);
         studentList.setAdapter(adapter);
         //
 

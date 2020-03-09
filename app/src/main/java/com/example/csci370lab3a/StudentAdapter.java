@@ -37,11 +37,11 @@ public class StudentAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View rowView = mInflator.inflate(R.layout.list_view_row, parent, false);
+        View rowView = mInflator.inflate(R.layout.custom_list_row, parent, false);
 
-        TextView studentFirstNameView = rowView.findViewById(android.R.id.text1);
-        TextView studentLastNameView = rowView.findViewById(android.R.id.text1);
-        TextView studentMajorView = rowView.findViewById(android.R.id.text2);
+        TextView studentFirstNameView = rowView.findViewById(R.id.first_name);
+        TextView studentLastNameView = rowView.findViewById(R.id.last_name);
+        TextView studentMajorView = rowView.findViewById(R.id.major);
 
         Student student = (Student) getItem(position);
         studentFirstNameView.setText(student.getFirstName());
